@@ -1110,7 +1110,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   16.0, 0.0, 16.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0xFFE6E40A),
                               textStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
@@ -1191,7 +1191,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   16.0, 0.0, 16.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0xFFE6E40A),
                               textStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
