@@ -92,22 +92,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => LoginWidget(),
         ),
         FFRoute(
-          name: TasksWidget.routeName,
-          path: TasksWidget.routePath,
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'tasks')
-              : TasksWidget(
-                  taskText: params.getParam(
-                    'taskText',
-                    ParamType.String,
-                  ),
-                  completed: params.getParam(
-                    'completed',
-                    ParamType.bool,
-                  ),
-                ),
-        ),
-        FFRoute(
           name: OnboardingWidget.routeName,
           path: OnboardingWidget.routePath,
           builder: (context, params) => OnboardingWidget(),
@@ -131,6 +115,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'completed')
               : CompletedWidget(
+                  taskText: params.getParam(
+                    'taskText',
+                    ParamType.String,
+                  ),
+                  completed: params.getParam(
+                    'completed',
+                    ParamType.bool,
+                  ),
+                ),
+        ),
+        FFRoute(
+          name: TasksWidget.routeName,
+          path: TasksWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'tasks')
+              : TasksWidget(
                   taskText: params.getParam(
                     'taskText',
                     ParamType.String,
